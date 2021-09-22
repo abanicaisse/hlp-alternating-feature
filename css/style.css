@@ -1,0 +1,22 @@
+:root {
+    --pink: hsl(322, 100%, 66%);
+    --pale-cyan: hsl(193, 100%, 96%);
+    --dark-cya: hsl(192,100%, 9%);
+    --grayish-blue: hsl(208, 11%, 55%);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.125rem;
+
+}
+
+h* {
+    font-family: 'Poppins', sans-serif;
+}
