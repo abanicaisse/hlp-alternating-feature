@@ -26,7 +26,7 @@ a {
     background-color: var(--pink);
     font-size: 1rem;
     border-radius: 2rem;
-    padding: .5rem 2rem;
+    padding: 1rem 2rem;
 }
 
 .pink-btn:hover {
@@ -62,7 +62,7 @@ main > * {
 }
 
 main > nav {
-    width: 90%;
+    width: 85%;
     display: flex;
     justify-content: space-between;
     margin-bottom: 5rem;
@@ -182,15 +182,10 @@ main > .hero > div + div > img {
         margin-bottom: 2rem;
     }
 
-
-
-
-
-
-
 /* footer section  */
 footer {
-    width: 100%;
+    width: 100%; 
+    background-color: var(--dark-cyan);
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -289,6 +284,36 @@ footer > p + p {
     margin-bottom: 1rem;
 }
 
+    /* footer logo  */
+.footer-logo {
+    width: 95%;
+}
+
+.footer-logo svg {
+    transform: scale(.7);
+    margin-left: -2.5rem;
+}
+
+.footer-logo svg > g > path {
+    fill: var(--pale-cyan);
+}
+
+
+@media screen and (max-width: 360px) {
+    main > nav > a {
+        font-size: .6rem;
+        padding: 0rem .2rem;
+    }
+
+    .pink-btn {
+        color: white;
+        /* background-color: var(--pink); */
+        font-size: 1rem;
+        border-radius: 2rem;
+        padding: 1rem .5rem;
+    }
+
+}
 
 /* for screens above 1200px  */
 @media screen and (min-width: 1200px) {
@@ -298,7 +323,7 @@ footer > p + p {
     }
 
     main > nav {
-        width: min(90%, 78.75rem);
+        width: min(85%, 75rem);
     }
 
     main > nav > img {
@@ -311,6 +336,7 @@ footer > p + p {
     }
 
     main > .hero {
+        width: min(85%, 75rem);
         text-align: left;
         display: flex;
         gap: 3rem;
@@ -318,10 +344,23 @@ footer > p + p {
         align-items: center;
     }
 
-    main > .hero > div > h1 {
-        font-size: 2rem;
-        font-weight: 600;
+    main > .hero > div {
+        width: 45%;
     }
+
+    main > .hero > div + div {
+        width: 55%;
+    }
+
+    main > .hero > div > h1 {
+        font-size: 2.5rem;
+        font-weight: 600;
+        margin-bottom: 2rem;
+    }
+
+main > .hero > div > p {
+    margin-bottom: 3rem;
+}
 
     /* Start section */
     .start {
@@ -347,6 +386,10 @@ footer > p + p {
         margin: auto;
     }
 
+    .footer-logo {
+        width: min(85%, 75rem);
+    }
+
     .footer-link {
         width: min(85%, 75rem);
         color: var(--pale-cyan);
@@ -368,37 +411,3 @@ footer > p + p {
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* footer section  */
-footer {
-    background-color: var(--dark-cyan);
-    color: white;
-}
-
-
-
