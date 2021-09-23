@@ -217,7 +217,7 @@ footer > * {
 }
 
 footer a {
-    color: var(--pale-cyan);
+    color: var(--grayish-blue);
 }
 
 footer a:hover {
@@ -225,6 +225,7 @@ footer a:hover {
 }
 
 .footer-link > div:nth-child(1) {
+    color: var(--grayish-blue);
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -275,6 +276,7 @@ footer a:hover {
 }
 
 footer > p {
+    color: var(--grayish-blue);
     text-align: center;
     font-size: 1rem;
 }
@@ -285,6 +287,86 @@ footer > p a {
 
 footer > p + p {
     margin-bottom: 1rem;
+}
+
+
+/* for screens above 1200px  */
+@media screen and (min-width: 1200px) {
+    /* Navbar and Hero Section */
+    main {
+        background-image: url('../assets/images/bg-hero-desktop.svg');
+    }
+
+    main > nav {
+        width: min(90%, 78.75rem);
+    }
+
+    main > nav > img {
+        margin-left: -4rem;
+    }
+
+    main > * {
+        width: min(85%, 75rem);
+        margin: auto;
+    }
+
+    main > .hero {
+        text-align: left;
+        display: flex;
+        gap: 3rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    main > .hero > div > h1 {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    /* Start section */
+    .start {
+        width: min(85%, 75rem);
+    }
+    
+        .start .description .grow, .start .description .conversation, .start .description .users {
+            text-align: left;
+            flex-direction: row;
+            gap: 5rem;
+            align-items: center; 
+            padding-left: 5rem;
+        }
+
+        .start .description .conversation{
+            flex-direction: row-reverse;
+        }
+
+
+    /* footer section  */
+    footer > * {
+        width: min(85%, 75rem);
+        margin: auto;
+    }
+
+    .footer-link {
+        width: min(85%, 75rem);
+        color: var(--pale-cyan);
+        font-size: 1rem;
+        display: grid;
+        grid-template-columns: 40% 15% 15% 15%;
+        column-gap: 5rem;
+        justify-content: space-between;
+    } 
+
+    .footer-link > div:nth-child(4) {
+        align-items: baseline;
+    }
+
+    footer > div + p {
+        text-align: right;
+        margin-bottom: 3rem;
+    }
+
+
 }
 
 
